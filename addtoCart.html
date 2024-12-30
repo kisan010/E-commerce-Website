@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AddtoCart Section</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <Header id="Header_section">
+    <div class="section_top">
+      <p id="adv">Free shopping 30-day return or refund guarantee</p>
+      <ul id="auth">
+        <li>SIGN IN</li>
+        <li>SIGN UP</li>
+      </ul>
+      </ul>
+    </div>
+    <div class="Navbar_section">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./public/dashimg.png">
+        </a>
+      </div>
+      <ul class="_navbar_list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="addtoCart.html" id="cartValue">
+            <i class="fa-solid fa-cart-shopping"> 0 </i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </Header>
+
+
+
+  <section class="addtoCardElement">
+    <div class="container">
+      <section class="products">
+        <div id="productCartContainer">
+
+        </div>
+      </section>
+      <section class="product_total">
+        <div class="productTotal_elem">
+          <p>Selected Offer Summary</p>
+          <div>
+            <div>
+              <p>Sub Total:</p>
+              <p class="productSubTotal">0</p>
+            </div>
+            <div>
+              <p>Tax:</p>
+              <p class="Tax">50</p>
+            </div>
+            <hr>
+            <div>
+              <p>Final Total:</p>
+              <p class="productFinalTotal">0</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </section>
+  <template id="productCartTemplate">
+    <div class="cards" id="cardValue">
+      <article class="information [card]">
+        <span class="category"></span>
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="" />
+        </div>
+        <h2 class="productName"></h2>
+
+
+
+        <p class="productPrice"></p>
+
+
+
+        <div class="stockElement">
+          <button class="cartIncrement">+</button>
+          <p class="productQuantity">1</p>
+          <button class="cartDecrement">-</button>
+
+        </div>
+
+        <button class="addtoCart remove-to-cart-button">
+          Remove
+        </button>
+
+      </article>
+    </div>
+  </template>
+
+
+
+  <footer class="Footer_section">
+    <div class="container_4">
+      <div class="box8">
+        <img src="public/dash-logo@logotyp.us.svg" width="100px" height="auto">
+        <p>Welcome to Dash EcomStore,Your ultimate destination cutting-edge gadgets!</p>
+        <div style="margin-top:8px;">
+          <img src="public/american express.png" width="40px" height="25px" alt="">
+          <img src="public/mastercard.png" width="40px" height="25px" alt="">
+          <img src="public/paypal.jpg" width="40px" height="25px" alt="">
+          <img src="public/Visa.png" width="40px" height="25px" alt="">
+        </div>
+      </div>
+      <div class="box9">
+        <h4>Shopping</h4>
+        <a href="#">Computer store</a>
+        <a href="#">Laptop store</a>
+        <a href="#">Accessories</a>
+        <a href="#">Sales and Discount</a>
+      </div>
+      <div class="box10">
+        <h4>Experience</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">payment Method</a>
+        <a href="#">Delivery</a>
+        <a href="#">Return and Exchange</a>
+      </div>
+      <div class="box11">
+        <h4>NEWSLETTER</h4>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit velit corrupti natus expedita
+          et.</P>
+        <form>
+          <input type="email" name="email" placeholder="Enter Your email" id="email">
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="Footer_base">
+      <p>Design and Code by Dash Technical</p>
+    </div>
+  </footer>
+  <script type="module" src="showAddtoCards.js"></script>
+</body>
+
+</html>

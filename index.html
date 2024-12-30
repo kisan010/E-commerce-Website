@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce website</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <Header id="Header_section">
+    <div class="section_top">
+      <p id="adv">Free shopping 30-day return or refund guarantee</p>
+      <ul id="auth">
+        <li>SIGN IN</li>
+        <li>SIGN UP</li>
+      </ul>
+    </div>
+    <div class="Navbar_section">
+      <div class="logo">
+        <a href="index.html">
+        <img src="./public/dashimg.png">
+      </a>
+      </div>
+      <ul class="_navbar_list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li >
+          <a href="addtoCart.html" id="cartValue">
+            <i class="fa-solid fa-cart-shopping"> 0 </i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </Header>
+  <main>
+    <section class="Hero">
+      <div class="container">
+        <div class="desc">
+          <h5>EXPLORE THE LATEST IN TECH INDUSTRIES</h5><BR>
+            <h2>Your Destination For <br>Cutting-Edge Gadgets!</h2><br>
+            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum omnis, officiis exercitationem deleniti
+              accusamus veritatis doloremque voluptatem? Provident, officiis, eos nesciunt rem earum incidunt optio</P><br>
+            <button><a href="products.html">Explore Our products</a></button>
+        </div>
+        <div class="desc_img">
+          <img src="./public/electronic.jpg" >
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- here we take 3 parent because one for area occipy,compare with upper div(in size equal) and last one for content -->
+  <div class="hero2">
+    <section class="second_section">
+      <div class="container">
+        <div class="box" id="box1">
+          <div class="semi_box">
+            <P>NEW YEAR SALE</P>
+            <h4>Get And Extra 50% <br>Off</h4>
+              <a href="products.html">SHOW NOW</a>
+          </div>
+          <div class="img_adv">
+            <img src="./public/laptop2.webp" width="100px" height="100px">
+          </div>
+        </div>
+        <div class="box" id="box2">
+          <div class="semi_box">
+            <P>NEW YEAR SALE</P>
+            <h4>40% Discount On<br>Speakers</h4>
+              <a href="products.html">SHOW NOW</a>
+          </div>
+          <div class="img_adv">
+            <img src="./public/sound-speaker.jpg" width="100px" height="100px">
+          </div>
+        </div>
+        <div class="box" id="box3">
+          <div class="semi_box">
+            <P>NEW YEAR SALE</P>
+            <h4>Get And Extra 50%<br>Off</h4>
+              <a href="products.html">SHOW NOW</a>
+          </div>
+          <div class="img_adv">
+            <img src="./public/headphone.jpg" width="100px" height="100px">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="hero3">
+    <section class="third_section">
+      <div class="container_2">
+        <div class="box" id="box4">
+          <div class="img_adv2">
+            <i class="fa-solid fa-truck-field-un" width="50px"></i>
+          </div>
+          <div class="semi_box2">
+            <p>Worldwide Shipping</p>
+            <p>Order Above $100</p>
+          </div>
+        </div>
+        <div class="box" id="box5">
+          <div class="img_adv2">
+            <i class="fa-solid fa-repeat"></i>
+          </div>
+          <div class="semi_box2">
+            <p>Easy 30 Days Returns</p>
+            <p>Back Returns in 7days</p>
+          </div>
+        </div>
+        <div class="box" id="box6">
+          <div class="img_adv2">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <div class="semi_box2">
+            <p>Money Back Guarantee</p>
+            <p>Guarantee with in 30-Days</p>
+          </div>
+        </div>
+        <div class="box" id="box7">
+          <div class="img_adv2">
+            <i class="fa-solid fa-headphones"></i>
+          </div>
+          <div class="semi_box2">
+            <p>Easy Online Support</p>
+            <p>24*7 Any Time Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- product section -->
+ <section class="section-products">
+    <div class="prod_container">  
+      <div class="section-common-heading">Checkout Dash store</div>
+    </div>
+    <section class="container_5">
+      <div id="product_container"> 
+
+      </div>
+    </section>
+  </section>
+  <!-- product template section -->
+   <template id="productTemplate">
+    <div class="cards" id="cardValue">
+      <article class="information [card]">
+        <span class="category"></span>
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="Image not found" />
+        </div>
+        <h2 class="productName"></h2>
+        <div class="productRating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="productDescription"></p>
+        <div class="productPriceElement">
+          <p class="productPrice"></p>
+          <p class="productActualPrice"></p>
+        </div>
+        <div class="productStockElement">
+          <p class="productProperty">Total stocks available:</p>
+          <p class="productStock"></p>
+        </div>
+        <div class="productQuantityElement">
+          <p class="productProperty">Quality(pieces)</p>
+          <div class="stockElement">
+            <button class="cartIncrement">+</button>
+            <p class="productQuantity">1</p>
+            <button class="cartDecrement">-</button>
+          </div>
+        </div>
+          <button class="addtoCart">
+            <i class="fa-solid fa-cart-shopping"></i>addtoCart 
+          </button>
+        
+      </article>
+    </div>
+   </template>
+  <div class="hero4">
+    <section class="choose_store">
+  
+        <div class="head_sec">
+          <h2>Why Choose Dash Store</h2>
+          <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Choose Dash EduHub for a holistic enriching learning experience that empowers you to achieve your goals </p>
+        </div>
+        <div class="Points">
+          <div class="one_col">
+            <div>
+              <span >1</span>
+              <h1>Expert Instructors</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, vel expedita? Corporis veritatis consectetur nobis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, debitis.</p>
+            </div>
+            <div>
+              <span>2</span>
+              <h1>Interactive Lessons</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, vel expedita? Corporis veritatis consectetur nobis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, aut.</p>
+            </div>
+            <div>
+              <span>3</span>
+              <h1>Lifelong Learning Support</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, vel expedita? Corporis veritatis consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, unde!</p>
+            </div>
+          </div>
+          <div class="two_col">
+            <img src="./public/istockphoto-1366487288-1024x1024.jpg" >
+          </div>
+          <div class="three_col">
+            <div>
+              <span>4</span>
+              <h1>Quality Assurance</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, vel expedita? Corporis veritatis consectetur nobis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, necessitatibus.</p>
+            </div>
+            <div>
+              <span>5</span>
+              <h1>Excellent Services</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, vel expedita? Corporis veritatis consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, repellendus?</p>
+            </div>
+            <div>
+              <span>6</span>
+              <h1>Compeitative Prices</h1>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, vel expedita? Corporis veritatis consectetur nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sint?</p>
+            </div>
+          </div>
+        
+        </div>
+     
+    </section>
+  </div>
+  <footer class="Footer_section">
+    <div class="container_4">
+      <div class="box8">
+        <img src="public/dash-logo@logotyp.us.svg" width="100px" height="auto">
+        <p>Welcome to Dash EcomStore,Your ultimate destination cutting-edge gadgets!</p>
+        <div style="margin-top:8px;">
+          <img src="public/american express.png" width="40px" height="25px" alt="image not found">
+          <img src="public/mastercard.png" width="40px" height="25px" alt="image not found">
+          <img src="public/paypal.jpg" width="40px" height="25px" alt="image not found">
+          <img src="public/Visa.png" width="40px" height="25px" alt="image not found">
+        </div>
+      </div>
+      <div class="box9">
+        <h4>Shopping</h4>
+        <a href="#">Computer store</a>
+        <a href="#">Laptop store</a>
+        <a href="#">Accessories</a>
+        <a href="#">Sales and Discount</a>
+      </div>
+      <div class="box10">
+        <h4>Experience</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">payment Method</a>
+        <a href="#">Delivery</a>
+        <a href="#">Return and Exchange</a>
+      </div>
+      <div class="box11">
+        <h4>NEWSLETTER</h4>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit velit corrupti natus expedita et.</P>
+        <form>
+          <input type="email" name="email" placeholder="Enter Your email" id="email">
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="Footer_base">
+      <p>Design and Code by Dash Technical</p>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/3817fa9f39.js" crossorigin="anonymous"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
