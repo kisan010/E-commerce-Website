@@ -9,7 +9,7 @@ const HeaderHtml=`
     <div class="Navbar_section">
       <div class="logo">
         <a href="index.html">
-        <img src="./public/dashimg.png">
+        <img src="./public/images/dashimg.png">
       </a>
       </div>
       <ul class="_navbar_list">

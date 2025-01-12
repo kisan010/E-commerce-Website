@@ -5,7 +5,7 @@ const productCOntainer = document.getElementById('product_container');
 const productTemplate = document.getElementById('productTemplate');
 
 
-
+console.log("hello")
 
 function showProductContainer(products) {
   if (!products) {
